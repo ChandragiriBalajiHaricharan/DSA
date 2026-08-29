@@ -2,7 +2,7 @@ import java.util.*;
 
 class Solution {
     public boolean isValidSudoku(char[][] board) {
-        // Arrays of sets for rows, columns, and boxes
+        
         Set<Character>[] rows = new HashSet[9];
         Set<Character>[] cols = new HashSet[9];
         Set<Character>[] boxes = new HashSet[9];
@@ -17,17 +17,14 @@ class Solution {
             for (int c = 0; c < 9; c++) {
                 char val = board[r][c];
                 
-                if (val == '.') continue; // skip empty cells
+                if (val == '.') continue; 
                 
-                // Check row
+                
                 if (rows[r].contains(val)) return false;
                 rows[r].add(val);
-                
-                // Check column
                 if (cols[c].contains(val)) return false;
                 cols[c].add(val);
-                
-                // Check 3x3 box
+
                 int boxIndex = (r / 3) * 3 + (c / 3);
                 if (boxes[boxIndex].contains(val)) return false;
                 boxes[boxIndex].add(val);
