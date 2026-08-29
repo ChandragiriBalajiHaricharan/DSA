@@ -3,26 +3,29 @@ import java.util.*;
 class Solution {
     public int longestConsecutive(int[] nums) {
 
-        Set<Integer> set = new HashSet<>();
-
-        for (int num : nums) {
-            set.add(num);
+        if (nums.length == 0) {
+            return 0;
         }
 
-        int longest = 0;
-        for (int num : set) {
-            if (!set.contains(num - 1)) {
+        Arrays.sort(nums);
 
-                int current = num;
-                int count = 1;
+        int longest = 1;
+        int current = 1;
 
-                while (set.contains(current + 1)) {
-                    current++;
-                    count++;
-                }
+        for (int i = 1; i < nums.length; i++) {
 
-                longest = Math.max(longest, count);
+            if (nums[i] == nums[i - 1]) {
+                continue;
             }
+
+            if (nums[i] == nums[i - 1] + 1) {
+                current++;
+            } 
+            else {
+                current = 1;
+            }
+
+            longest = Math.max(longest, current);
         }
 
         return longest;
