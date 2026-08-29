@@ -9,8 +9,8 @@ class Solution {
 
         Arrays.sort(nums);
 
-        int longest = 1;
-        int current = 1;
+        int pedda = 1;
+        int ippudu = 1;
 
         for (int i = 1; i < nums.length; i++) {
 
@@ -19,15 +19,15 @@ class Solution {
             }
 
             if (nums[i] == nums[i - 1] + 1) {
-                current++;
+                ippudu++;
             } 
             else {
-                current = 1;
+                ippudu = 1;
             }
 
-            longest = Math.max(longest, current);
+            pedda = Math.max(pedda, ippudu);
         }
 
-        return longest;
+        return pedda;
     }
 }
