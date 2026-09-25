@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/ChandragiriBalajiHaricharan/DSA/tree/master/0238-product-of-array-except-self) |
 | [0268-missing-number](https://github.com/ChandragiriBalajiHaricharan/DSA/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/ChandragiriBalajiHaricharan/DSA/tree/master/0347-top-k-frequent-elements) |
+| [0643-maximum-average-subarray-i](https://github.com/ChandragiriBalajiHaricharan/DSA/tree/master/0643-maximum-average-subarray-i) |
 ## Hash Table
 |  |
 | ------- |
@@ -109,6 +110,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/ChandragiriBalajiHaricharan/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0424-longest-repeating-character-replacement](https://github.com/ChandragiriBalajiHaricharan/DSA/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/ChandragiriBalajiHaricharan/DSA/tree/master/0567-permutation-in-string) |
+| [0643-maximum-average-subarray-i](https://github.com/ChandragiriBalajiHaricharan/DSA/tree/master/0643-maximum-average-subarray-i) |
 ## Queue
 |  |
 | ------- |
